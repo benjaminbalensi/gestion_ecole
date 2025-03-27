@@ -51,7 +51,7 @@ df = pd.DataFrame(rows)
 
 st.title("📊 Analyse de rentabilité - École d'Arts Vivants")
 st.subheader("📌 Données par activité")
-st.dataframe(df.style.format("{:.0f}"), use_container_width=True)
+st.dataframe(df, use_container_width=True)
 
 # === Résumé global ===
 seuil_rentabilite = frais_fixes / total_marge if total_marge != 0 else 0
